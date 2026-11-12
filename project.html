@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parkway | Project Overview</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#14233a;font:16px system-ui,sans-serif}header,main,footer{max-width:1160px;margin:auto;padding:22px}header,.hero,.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}header strong{font-size:23px;letter-spacing:-.06em}header b{display:inline-grid;place-items:center;background:var(--accent);color:#fff;border-radius:9px;width:34px;height:34px;margin-right:6px}header span,footer,.top span{color:#526179;font-size:13px}main{padding-top:0}.hero{background:#152541;color:#fff;border-radius:20px;padding:clamp(24px,5vw,58px);background-image:repeating-linear-gradient(135deg,transparent 0 70px,#ffffff12 71px 72px)}h1{font-size:clamp(45px,7vw,88px);letter-spacing:-.075em;margin:5px 0;line-height:1}p{line-height:1.55}.hero p{margin-bottom:0;color:#dce4f3}.hero small,.badge{color:#d8ffad;font-weight:700}.badge{border:1px solid #ffffff50;border-radius:20px;padding:8px 13px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat,.panel{background:#fff;border:1px solid #dfe5ed;border-radius:14px;padding:16px}.stat b{font-size:28px;display:block}.stat span{color:#526179;font-size:14px}.layout{display:grid;grid-template-columns:2fr 1fr;gap:15px}h2{font-size:21px;margin:0 0 12px}.top span{align-self:start}#map{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.bay{min-height:78px;border:1px solid #9cc8b5;background:#e2f4eb;color:#164938;border-radius:8px;padding:7px;font-weight:700}.bay small{display:block;font-weight:500}.bay.occupied{background:#edf0f4;color:#445168;border-color:#c8d0dc}.bay.offline{background:#ffead7;color:#763d09;border-color:#e8b17a}.bay[aria-pressed=true]{outline:3px solid var(--accent);outline-offset:-3px}.bay:disabled{opacity:.45}.lane{grid-column:1/-1;text-align:center;color:#526179;font-size:13px;padding:9px;border-block:1px dashed #acb7c8}.legend,.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.legend{font-size:12px;color:#526179}.legend span:first-child{color:#16654b}.legend span:last-child{color:#8b4c10}button,select{cursor:pointer;font:inherit}button:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}.controls button,select{padding:8px 11px;border:1px solid #cbd4e4;border-radius:7px;background:var(--tint);color:#14233a}.controls label{display:grid;gap:5px}.side ol{padding-left:20px;color:#41536c;font-size:14px}.side li{margin-bottom:8px}.side #status{background:var(--tint);padding:12px;border-radius:8px}footer{padding-top:0}@media(max-width:720px){.layout{grid-template-columns:1fr}header,main,footer{padding-inline:13px}.stat,.panel{padding:11px}#map{gap:5px}.bay{font-size:13px}.bay small{font-size:10px}}body[data-mode="0"] .hero{background-color:#183f9e}body[data-mode="0"] .stat:first-child{background:#e4f0ff}
+body[data-mode="1"]{background:#101b21;color:#ecf7f4}body[data-mode="1"] .hero{background-color:#153731}body[data-mode="1"] .panel,body[data-mode="1"] .stat{background:#1b2a30;border-color:#344950}body[data-mode="1"] header span,body[data-mode="1"] footer,body[data-mode="1"] .stat span,body[data-mode="1"] .top span,body[data-mode="1"] .lane,body[data-mode="1"] .legend span,body[data-mode="1"] .side li{color:#bcd2d5}body[data-mode="1"] .side #status{color:#123429}
+body[data-mode="2"]{background:#f4eefb}body[data-mode="2"] .hero{background-color:#472376}body[data-mode="2"] .layout{grid-template-columns:1.15fr 1fr}body[data-mode="2"] .side{grid-column:1;grid-row:1}body[data-mode="2"] .controls button{border-color:#c6acec;font-weight:650}body[data-mode="2"] .controls button:first-child{background:#7039ca;color:white}@media(max-width:720px){body[data-mode="2"] .layout{grid-template-columns:1fr}}
+body[data-mode="0"]{--accent:#2d5be3;--tint:#edf2ff}body[data-mode="1"]{--accent:#007f6e;--tint:#e6f7ef}body[data-mode="2"]{--accent:#7039ca;--tint:#f3eaff}nav{max-width:1160px;margin:0 auto 16px;padding:0 22px;display:flex;gap:8px;flex-wrap:wrap}nav a{color:inherit;text-decoration:none;padding:9px 13px;border-radius:8px;border:1px solid #a8b3c4;font-size:14px;font-weight:650}nav a[aria-current]{background:var(--accent);color:white;border-color:var(--accent)}nav a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}@media(max-width:720px){nav{padding-inline:13px}}
+
+.project-grid{display:grid;gap:16px;margin-top:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr))}
+.project-grid p{margin-bottom:0}
+</style>
+</head>
+<body data-mode="0">
+<header><strong><b>P</b> Parkway</strong><span>SMART PARKING GROUP PROJECT</span></header>
+<nav aria-label="Page navigation"><a href="index.html">← Back to Parkway</a></nav>
+<main>
+<section class="hero">
+<div><small>Smart parking prototype</small><h1>Project overview</h1><p>See how a parking sensor can help drivers find a space and operators spot faults.</p></div>
+<div class="badge">● Simulated data</div>
+</section>
+<div class="project-grid">
+<section class="panel"><h2>How detection works</h2><p>The demo uses a simulated distance reading. A car arriving changes the reading from 180 cm to 35 cm. The bay becomes occupied because the reading is below the demo threshold of 60 cm.</p></section>
+<section class="panel"><h2>What drivers see</h2><p>The car park map shows which bays are available. Drivers can filter by bay type and select an available space.</p></section>
+<section class="panel"><h2>What operators see</h2><p>The control room shows occupancy and sensor health. Operators can simulate a sensor going offline and then restore it.</p></section>
+</div>
+<section class="panel" style="margin-top:16px"><h2>Try it in your presentation</h2><p>Open <a href="index.html#demo">Sensor Demo</a>, choose a free bay, then click <strong>Car arrives</strong>. Switch to <strong>Find a Space</strong> to see the same bay marked occupied.</p></section>
+</main>
+<footer>Parkway · Smart parking group project</footer>
+</body>
+</html>
